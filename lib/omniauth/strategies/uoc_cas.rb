@@ -21,7 +21,7 @@ module OmniAuth
           options[:ssl] = false
         end
         
-        if Rails.env.test? of Rails.env.development?
+        if Rails.env.test? or Rails.env.development?
           options[:host] = 'cv-test.uoc.edu' 
           options[:disable_ssl_verification] = true
           options[:ssl] = false
